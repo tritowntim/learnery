@@ -2,11 +2,13 @@
 
 <table>
 	<tr>
+		<th>Id</th>
 		<th>First</th>
 		<th>Last</th>
 	</tr>
 	<% students.each do |student| %>
 		<tr>
+			<td><%= link_to student.id, student %></td>
 			<td><%= student.first_name %></td>
 			<td><%= student.last_name %></td>
 		</tr>
