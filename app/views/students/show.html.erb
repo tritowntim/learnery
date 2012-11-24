@@ -5,4 +5,7 @@
 
 <p>Last name: <%= @student.last_name %></p>
 
+<p><%= link_to "edit",  edit_student_path(@student) %> | <%= link_to "all",  students_path %> | <%= link_to "new",  new_student_path %> </p>
+
+
 

@@ -1,15 +1,1 @@
-
-<div class="row">
-  <%= form_for(@student) do |f| %>
-
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-
-    <br/>
-    <%= f.submit "save", :class => "btn bnt-large btn-primary" %>
-
-  <% end %>
-</div>
+<%= render 'form', :show_id => true %>
