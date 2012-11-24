@@ -3,8 +3,7 @@
   <%= form_for(@student) do |f| %>
 
   	<% if show_id %>
-	  	<%= f.label :id %>
-  		<p><%= @student.id %></p>
+			<h3>Student <%= @student.id %></h3>
   	<% end %>
 
     <%= f.label :first_name %>
@@ -14,7 +13,8 @@
     <%= f.text_field :last_name %>
 
     <br/>
-    <%= f.submit "save", :class => "btn bnt-large btn-primary" %>
+    <%= f.submit "save", :class => "btn btn-primary" %>
+    <%= link_to "cancel", @student, :class => "btn" %>
 
   <% end %>
 </div>
