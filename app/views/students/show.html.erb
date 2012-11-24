@@ -1,9 +1,8 @@
-<% student = Student.find(params[:id]) %>
 
-<h3>Student <%= student.id %></h3>
+<h3>Student <%= @student.id %></h3>
 
-<p>First name: <%= student.first_name %></p>
+<p>First name: <%= @student.first_name %></p>
 
-<p>Last name: <%= student.last_name %></p>
+<p>Last name: <%= @student.last_name %></p>
 
 
